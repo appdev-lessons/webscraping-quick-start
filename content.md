@@ -57,7 +57,7 @@ Next, how do we select the specific parts of the page to get the data from?
 
 We need to use CSS selectors to pick which elements we want to grab from the page.
 
-Let’s say I want to select all the links in a list on the Chapters homepage.
+Let’s say I want to select all the links in a list on the Learn Lesson page.
 
 ```ruby
 # This selects all <a> element that are inside an <li> element 
@@ -88,11 +88,9 @@ end
 If we run the whole code we should get the text of the links we wanted:
 
 ```
-"The One Reference"
-"Nouns, verbs, and grammar"
-"A few program notes"
-"String"
-"Getting strings from users"
+"Nokogiri"
+"CSS Resources"
+"CSS Diner"
 ...
 ```
 
