@@ -68,7 +68,7 @@ If you need to you can further filter page content with multiple uses of the `.c
 
 ```ruby
 # This selects all <a> element that are inside a <div> element 
-div_links = parsed_page.css("div").css("a")
+div_links = parsed_page.css("div").css("a").children
 ```
 
 For more details about how to figure out the selector you want to use, see the [CSS Resources](#css-resources){:target="_self"} section at the bottom.
@@ -88,10 +88,18 @@ end
 If we run the whole code we should get the text of the links we wanted:
 
 ```
-"Nokogiri"
+"Step 1"
+"Step 2"
+"Step 3"
+"Step 4"
+"Step 5"
 "CSS Resources"
 "CSS Diner"
-...
+"Selector Gadget"
+"Home"
+"Terms of Service"
+"Privacy Policy"
+"FERPA Statement"
 ```
 
 ## CSS Resources
